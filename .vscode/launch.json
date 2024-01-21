@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${fileDirname}"
+        },
+        {
+            "name": "EasyOCR Debug",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "D:\\WindowsFiles\\User\\zh4men9\\Desktop\\Desktop\\深度学习编程零基础入门-2024-01版本\\项目实践\\EasyOCR",
+            "args": [
+                "--easyocr",
+                "./easyocr",
+                "--verbose",
+                "2",
+                "--test_data",
+                "./unit_test/data/EasyOcrUnitTestPackage.pickle",
+                "--image_data_dir",
+                "./examples"
+            ]
+        }
+    ]
+}
